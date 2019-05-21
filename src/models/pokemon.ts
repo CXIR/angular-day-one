@@ -33,7 +33,7 @@ export class Pokemon {
 
     specialAttack(opponent : Pokemon) : void {
 
-        let fight = this.Stats.SpAttack - opponent.Stats.Defense
+        let fight = this.Stats.SpAttack - opponent.Stats.SpDefense
         opponent.Life -= (fight > 0) ? this.Stats.HP : 0
     }
 }
